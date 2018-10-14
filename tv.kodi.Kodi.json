@@ -23,11 +23,12 @@
     ],
     "modules": [
         "deps/avahi.json",
+        "shared-modules/udev/udev-175.json",
         "deps/bluez.json",
         "deps/fribidi.json",
         "deps/fstrcmp.json",
         "deps/ghostscript.json",
-        "deps/glu.json",
+        "shared-modules/glu/glu-9.0.0.json",
         "deps/libass.json",
         "deps/libcdio.json",
         "deps/lzo2.json",
@@ -35,7 +36,6 @@
         "deps/swig.json",
         "deps/taglib.json",
         "deps/tinyxml.json",
-        "deps/udev.json",
         {
             "name": "kodi",
             "buildsystem": "cmake",
