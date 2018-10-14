@@ -30,7 +30,6 @@
         "deps/fmt.json",
         "deps/fribidi.json",
         "deps/fstrcmp.json",
-        "deps/ghostscript.json",
         "shared-modules/glu/glu-9.0.0.json",
         "deps/libass.json",
         "deps/libcdio.json",
