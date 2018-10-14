@@ -25,7 +25,6 @@
         "shared-modules/udev/udev-175.json",
         "shared-modules/python2.7/python-2.7.15.json",
         "deps/avahi.json",
-        "shared-modules/udev/udev-175.json",
         "deps/libical.json",
         "deps/bluez.json",
         "deps/fmt.json",
