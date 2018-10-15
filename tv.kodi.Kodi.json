@@ -39,9 +39,15 @@
         "deps/swig.json",
         "deps/taglib.json",
         "deps/tinyxml.json",
+        "deps/cmake.json",
         {
             "name": "kodi",
             "buildsystem": "cmake-ninja",
+            "build-options": {
+                "build-args": [
+                    "--share=network"
+                ]
+            },
             "config-opts": [
                 "-DVERBOSE=1",
                 "-DENABLE_INTERNAL_FFMPEG=ON",
@@ -57,6 +63,7 @@
                 "-DJava_JAVA_EXECUTABLE=/usr/lib/sdk/openjdk10/bin/java"
             ],
             "post-install": [
+                "make -j$FLATPAK_BUILDER_N_JOBS -C tools/depends/target/binary-addons PREFIX=/app",
                 "sed -i 's|^KODI_DATA.*|KODI_DATA=${HOME}/.var/app/tv.kodi.Kodi/data|' /app/bin/kodi"
             ],
             "sources": [
